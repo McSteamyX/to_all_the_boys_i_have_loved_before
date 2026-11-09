@@ -1,0 +1,1166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>The Jenny Han Collection</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favcon.png' %}" rel="icon">
+  <link href="{% static 'img/appletouch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BookLanding
+  * Template URL: https://bootstrapmade.com/bootstrap-book-landing-page-template/
+  * Updated: Mar 02 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'img/pglogo.webp' %}" alt="">
+
+        <!-- Uncomment the line below if you also wish to use a text logo -->
+        <h1 class="sitename">The Jenny Han Collection</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#excerpt">Read an Excerpt</a></li>
+          <li><a href="#about-author">About the Author</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#purchase">Purchase</a></li>
+          <li><a href="#faq">F.A.Q.</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!--  -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-5">
+            <div class="book-hero-content" data-aos="fade-up" data-aos-delay="200">
+              <span class="book-genre">Young Adult · Contemporary Romance</span>
+              <h1>To All The Boys I've Loved Before</h1>
+              <p class="book-subtitle">Some letters are meant to be kept in secret. Others have a way of changing everything.</p>
+              <div class="author">
+                <span>By</span>
+                <h3>Jenny Han</h3>
+              </div>
+              <p class="book-description">
+                A heartfelt story about first love, unexpected connections and the courage to let people see who you really are. Meet Lara Jean Song, a hopeless romantic whose private love letters take an unexpected journey into the real world, turning her carefully organised life upside down. A charming coming-of-age story filled with family, friendship, awkward moments and the excitement of falling in love.
+              </p>
+              <div class="hero-cta">
+                <a href="#purchase" class="btn-primary">Get Your Copy</a>
+                <a href="#excerpt" class="btn-outline">Read Preview</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end" data-aos="zoom-out" data-aos-delay="300">
+            <div class="book-cover">
+              <img src="{% static 'img/book/book-1.jpg' %}" alt="Book Cover" class="img-fluid">
+              <div class="book-shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-5 gx-lg-5">
+          <div class="col-lg-6">
+            <div class="about-book-img" data-aos="fade-right" data-aos-delay="200">
+              <img src="{% static 'img/book/book-square-5.jpg' %}" alt="Book Title" class="img-fluid">
+              <div class="book-details">
+                <div class="detail-item">
+                  <i class="bi bi-journal"></i>
+                  <div>
+                    <span>Pages</span>
+                    <p>384</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="bi bi-translate"></i>
+                  <div>
+                    <span>Language</span>
+                    <p>English</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div>
+                    <span>Published</span>
+                    <p>15/04/2024</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="bi bi-star"></i>
+                  <div>
+                    <span>Rating</span>
+                    <p>4.8/5</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="about-book-content" data-aos="fade-left" data-aos-delay="300">
+              <h2>About The Book</h2>
+              <div class="book-category">
+                <span><i class="bi bi-book"></i> Young Adult</span>
+                <span><i class="bi bi-heart"></i> Romance</span>
+                <span><i class="bi bi-bookmark"></i> Contemporary Fiction</span>
+              </div>
+              <p>
+                Lara Jean Song has a secret: whenever she falls in love, she writes a letter to the boy, expressing every feeling she could never say out loud. These letters are personal, honest and never intended to be sent. Safely tucked away in a hatbox, they represent the different chapters of her romantic life.
+              </p>
+              <p>
+                But when the letters unexpectedly find their way to the boys they were written for, Lara Jean's quiet world becomes anything but ordinary. Suddenly, she must navigate unexpected attention, complicated feelings and relationships she never planned for. Jenny Han delivers a delightful story about growing up, discovering love and learning to embrace life's surprises.
+              </p>
+
+              <div class="highlights">
+                <h3>What You'll Discover:</h3>
+                <ul>
+                  <li>
+                    <i class="bi bi-check-circle"></i>
+                    <span>The unexpected consequences of keeping secrets.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i>
+                    <span>The excitement and uncertainty of first love.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i>
+                    <span>The importance of family, sisterhood and friendship.</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle"></i>
+                    <span>Finding your voice and embracing new experiences.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="#purchase" class="about-book-cta">
+                Get the Book <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What Makes This Book Special</h2>
+        <p>More than a love story, it's a celebration of growing up, discovering yourself and experiencing all the unexpected moments in between.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h3>A Refreshingly Original Story</h3>
+              <p>A collection of private love letters becomes the beginning of an unexpected adventure, giving an ordinary teenage experience an extraordinary twist.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-icon">
+                <i class="bi bi-chat-quote"></i>
+              </div>
+              <h3>Engaging Dialogue</h3>
+              <p>Natural conversations, awkward encounters and playful exchanges bring the characters and their relationships to life.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Relatable Characters</h3>
+              <p>Lara Jean's journey explores growing up, navigating relationships and learning more about herself along the way.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-icon">
+                <i class="bi bi-stars"></i>
+              </div>
+              <h3>A World of Everyday Magic</h3>
+              <p>From family traditions to school life and unexpected romance, the story makes ordinary moments feel special.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+              <div class="feature-icon">
+                <i class="bi bi-heart"></i>
+              </div>
+              <h3>The Complexity of First Love</h3>
+              <p>Explore the excitement, uncertainty and vulnerability that come with opening your heart to someone.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+              <div class="feature-icon">
+                <i class="bi bi-heart-pulse"></i>
+              </div>
+              <h3>An Emotional Journey</h3>
+              <p>A heartwarming coming-of-age experience filled with laughter, unexpected discoveries and meaningful relationships.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="700">
+            <div class="feature-chapters">
+              <h3>Chapters Overview</h3>
+              <div class="chapters-grid">
+                <div class="chapter-item">
+                  <span class="chapter-number">01</span>
+                  <h4>The Secret Letters</h4>
+                  <p>Discover Lara Jean's private world and the letters she never intended anyone to read.</p>
+                </div>
+                <div class="chapter-item">
+                  <span class="chapter-number">02</span>
+                  <h4>An Unexpected Twist</h4>
+                  <p>Everything changes when the letters find their way to their intended recipients.</p>
+                </div>
+                <div class="chapter-item">
+                  <span class="chapter-number">03</span>
+                  <h4>Complicated Feelings</h4>
+                  <p>Lara Jean faces unexpected attention and emotions she never anticipated.</p>
+                </div>
+                <div class="chapter-item">
+                  <span class="chapter-number">04</span>
+                  <h4>Learning About Love</h4>
+                  <p>New relationships challenge her understanding of romance and herself.</p>
+                </div>
+                <div class="chapter-item">
+                  <span class="chapter-number">05</span>
+                  <h4>Finding Her Own Story</h4>
+                  <p>Lara Jean begins to discover what it means to take control of her own happiness.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Features Section -->
+
+    <!-- Excerpt Section -->
+    <section id="excerpt" class="excerpt section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Read an Excerpt</h2>
+        <p>Every love story begins somewhere. Sometimes, it begins with a letter.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="book-excerpt-wrapper" data-aos="fade-up" data-aos-delay="300">
+              <div class="book-page-design">
+                <div class="page-number">01</div>
+                <div class="chapter-title">Chapter One: The Letters I Never Sent</div>
+
+                <div class="excerpt-content">
+                  <p class="first-letter">
+                    I have always believed that some things are better left unsaid.
+                  </p>
+
+                  <p>
+                    Not because they aren't important, but because sometimes putting feelings into words makes them too real. And sometimes, the thought of someone knowing exactly how you feel is far more terrifying than keeping it to yourself.   
+                
+                  </p>
+
+                  <p class="dialogue">
+                    For me, those feelings have always belonged on paper.
+                    There is something comforting about writing a letter to someone you will never send it to. You can say everything. You can be honest, dramatic, embarrassing, even a little ridiculous. Nobody interrupts you. Nobody judges you. And most importantly, nobody ever has to know.
+                  </p>
+
+                  <p>
+                    At least, that was the plan.
+                  </p>
+
+                  <p class="dialogue">
+                    I used to think that the hardest part of falling for someone was admitting it to yourself. I was wrong. The hardest part is discovering what happens when a secret you have carefully protected suddenly stops being a secret.
+                  </p>
+
+                  <p class="dialogue">
+                    I never imagined that a few handwritten letters could turn my perfectly ordinary life into something I couldn't control.
+                  </p>
+
+                  <p>
+                    But then again, I had never imagined that the boys I had written to would actually read them.
+                  </p>
+                  <p>
+                    And that was where everything began.
+                  </p>
+                </div>
+
+                <div class="page-decoration"></div>
+              </div>
+
+              <div class="cta-wrapper text-center mt-4">
+                <a href="#purchase" class="btn-read-more">
+                  Continue Reading <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Excerpt Section -->
+
+    <!-- About Author Section -->
+    <section id="about-author" class="about-author section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="author-image">
+              <img src="{% static 'img/person/person-m-1.jpg' %}" alt="Author Name" class="img-fluid">
+              <div class="author-signature">
+                <img src="{% static 'img/misc/signature-1.jpg' %}" alt="Author Signature" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="author-info">
+              <h2>About the Author</h2>
+              <h3>Jenny Han</h3>
+              <div class="author-credentials">New York Times Bestselling Author | Writer | Producer </div>
+
+              <div class="author-bio">
+                <p>
+                  Jenny Han is a bestselling American author celebrated for her heartwarming young adult novels exploring love, friendship, family and the journey of growing up.
+                    <br>
+                  She is best known for the To All the Boys I've Loved Before trilogy and The Summer I Turned Pretty series, both of which have been adapted into popular screen productions.
+                </p>
+                <p>
+                  With her engaging storytelling, memorable characters and ability to capture the complexities of teenage life, Jenny has built a special connection with readers around the world. Her books have been translated into more than thirty languages, introducing her stories to audiences across different cultures.
+                </p>
+                <p>
+                  Beyond writing, Jenny has also worked as a television creator, showrunner and executive producer, bringing many of her beloved fictional worlds to the screen.
+                </p>
+              </div>
+
+              <div class="author-awards">
+                <h4>Awards &amp; Recognition</h4>
+                <ul>
+                  <li><i class="bi bi-award"></i> <span>New York Times bestselling author.</span></li>
+                  <li><i class="bi bi-award"></i> <span>Author of two bestselling young adult book series.</span></li>
+                  <li><i class="bi bi-award"></i> <span>Creator and co-showrunner of The Summer I Turned Pretty</span></li>
+                  <li><i class="bi bi-award"></i> <span>Executive producer of the To All the Boys film adaptations.</span></li>
+                  <li><i class="bi bi-award"></i> <span>Creator and executive producer of XO, Kitty.</span></li>
+                </ul>
+              </div>
+
+              <div class="author-social">
+                <h4>Connect with the Author</h4>
+                <div class="social-links">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-globe"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Author Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What readers love about her</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="critic-reviews" data-aos="fade-up" data-aos-delay="300">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="critic-review">
+                    <div class="review-quote">"</div>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    <div class="critic-info">
+                      <div class="critic-name">The New York Times</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="critic-review">
+                    <div class="review-quote">"</div>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    <div class="critic-info">
+                      <div class="critic-name">Washington Post</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="critic-review">
+                    <div class="review-quote">"</div>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                    <div class="critic-info">
+                      <div class="critic-name">The Guardian</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonials-container">
+              <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 30,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    },
+                    "breakpoints": {
+                      "768": {
+                        "slidesPerView": 2
+                      },
+                      "992": {
+                        "slidesPerView": 3
+                      }
+                    }
+                  }
+                </script>
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                        Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.
+                      </p>
+                      <div class="testimonial-profile">
+                        <img src="{% static 'img/person/person-f-1.webp' %}" alt="Reviewer" class="img-fluid rounded-circle">
+                        <div>
+                          <h3>Jane Smith</h3>
+                          <h4>Book Enthusiast</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus.
+                      </p>
+                      <div class="testimonial-profile">
+                        <img src="{% static 'img/person/person-m-2.webp' %}" alt="Reviewer" class="img-fluid rounded-circle">
+                        <div>
+                          <h3>Michael Johnson</h3>
+                          <h4>Sci-Fi Blogger</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </div>
+                      <p>
+                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada.
+                      </p>
+                      <div class="testimonial-profile">
+                        <img src="{% static 'img/person/person-f-3.webp' %}" alt="Reviewer" class="img-fluid rounded-circle">
+                        <div>
+                          <h3>Emily Davis</h3>
+                          <h4>Book Club President</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                      <div class="testimonial-profile">
+                        <img src="{% static 'img/person/person-m-4.webp' %}" alt="Reviewer" class="img-fluid rounded-circle">
+                        <div>
+                          <h3>Robert Wilson</h3>
+                          <h4>Literary Reviewer</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <div class="overall-rating">
+              <div class="rating-number">4.8</div>
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p>Based on 230+ reviews</p>
+              <div class="rating-platforms">
+                <span>Goodreads</span>
+                <span>Amazon</span>
+                <span>Barnes &amp; Noble</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+
+    <!-- Purchase Section -->
+    <section id="purchase" class="purchase section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Get Your Copy Today</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="book-format-card">
+              <div class="format-icon">
+                <i class="bi bi-book"></i>
+              </div>
+              <h3>Hardcover</h3>
+              <div class="format-price">$24.99</div>
+              <ul class="format-features">
+                <li><i class="bi bi-check-circle"></i> Premium quality binding</li>
+                <li><i class="bi bi-check-circle"></i> Full-color illustrations</li>
+                <li><i class="bi bi-check-circle"></i> Dust jacket included</li>
+                <li><i class="bi bi-check-circle"></i> 384 pages</li>
+              </ul>
+              <div class="buy-options">
+                <a href="#" class="btn-purchase">Buy Now</a>
+                <div class="retailers">
+                  <span>Available at:</span>
+                  <div class="retailer-logos">
+                    <a href="#" title="Amazon"><i class="bi bi-amazon"></i></a>
+                    <a href="#" title="Barnes &amp; Noble"><i class="bi bi-shop"></i></a>
+                    <a href="#" title="IndieBound"><i class="bi bi-shop-window"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="book-format-card">
+              <div class="format-icon">
+                <i class="bi bi-journal"></i>
+              </div>
+              <h3>Paperback</h3>
+              <div class="format-price">$16.99</div>
+              <ul class="format-features">
+                <li><i class="bi bi-check-circle"></i> Lightweight design</li>
+                <li><i class="bi bi-check-circle"></i> High-quality paper</li>
+                <li><i class="bi bi-check-circle"></i> Perfect for travel</li>
+                <li><i class="bi bi-check-circle"></i> 384 pages</li>
+              </ul>
+              <div class="buy-options">
+                <a href="#" class="btn-purchase">Buy Now</a>
+                <div class="retailers">
+                  <span>Available at:</span>
+                  <div class="retailer-logos">
+                    <a href="#" title="Amazon"><i class="bi bi-amazon"></i></a>
+                    <a href="#" title="Barnes &amp; Noble"><i class="bi bi-shop"></i></a>
+                    <a href="#" title="IndieBound"><i class="bi bi-shop-window"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="book-format-card">
+              <div class="format-icon">
+                <i class="bi bi-tablet"></i>
+              </div>
+              <h3>E-Book</h3>
+              <div class="format-price">$9.99</div>
+              <ul class="format-features">
+                <li><i class="bi bi-check-circle"></i> Instant download</li>
+                <li><i class="bi bi-check-circle"></i> Compatible with all devices</li>
+                <li><i class="bi bi-check-circle"></i> Adjustable text size</li>
+                <li><i class="bi bi-check-circle"></i> Digital bookmarking</li>
+              </ul>
+              <div class="buy-options">
+                <a href="#" class="btn-purchase">Buy Now</a>
+                <div class="retailers">
+                  <span>Available at:</span>
+                  <div class="retailer-logos">
+                    <a href="#" title="Kindle"><i class="bi bi-kindle"></i></a>
+                    <a href="#" title="Apple Books"><i class="bi bi-apple"></i></a>
+                    <a href="#" title="Google Play"><i class="bi bi-google"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="book-format-card">
+              <div class="format-icon">
+                <i class="bi bi-headphones"></i>
+              </div>
+              <h3>Audiobook</h3>
+              <div class="format-price">$19.99</div>
+              <ul class="format-features">
+                <li><i class="bi bi-check-circle"></i> Professional narration</li>
+                <li><i class="bi bi-check-circle"></i> 10 hours 23 minutes</li>
+                <li><i class="bi bi-check-circle"></i> High-quality audio</li>
+                <li><i class="bi bi-check-circle"></i> Stream or download</li>
+              </ul>
+              <div class="buy-options">
+                <a href="#" class="btn-purchase">Buy Now</a>
+                <div class="retailers">
+                  <span>Available at:</span>
+                  <div class="retailer-logos">
+                    <a href="#" title="Audible"><i class="bi bi-soundwave"></i></a>
+                    <a href="#" title="Apple Books"><i class="bi bi-apple"></i></a>
+                    <a href="#" title="Google Play"><i class="bi bi-google"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="bundle-offer" data-aos="fade-up" data-aos-delay="500">
+              <div class="row align-items-center">
+                <div class="col-md-7">
+                  <h3>Special Bundle Offer</h3>
+                  <p>Get the hardcover, e-book, and audiobook versions in a special bundle package.</p>
+                  <ul>
+                    <li><i class="bi bi-check-lg"></i> Save 20% on individual prices</li>
+                    <li><i class="bi bi-check-lg"></i> Exclusive author commentary track</li>
+                    <li><i class="bi bi-check-lg"></i> Digital bookplate signed by the author</li>
+                  </ul>
+                  <div class="bundle-price">
+                    <span class="original">$54.97</span>
+                    <span class="discounted">$43.99</span>
+                  </div>
+                  <a href="#" class="btn-bundle">Get the Bundle</a>
+                </div>
+                <div class="col-md-5">
+                  <div class="bundle-image">
+                    <img src="{% static 'img/book/book-square-5.jpg' %}" alt="Book Bundle" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Purchase Section -->
+
+    <!-- Faq Section -->
+    <section class="faq-9 faq section light-background" id="faq">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5" data-aos="fade-up">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <p class="faq-description">Curious about Jenny Han, her books or where to begin? Find your answers here</p>
+            <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
+              <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Who is Jenny Han?</h3>
+                <div class="faq-content">
+                  <p>Jenny Han is an American author known for her young adult fiction novels. She is the author of the "To All the Boys I've Loved Before" series, which has been adapted into a successful film franchise.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What genre is To All the Boys I've Loved Before?</h3>
+                <div class="faq-content">
+                  <p>It is a young adult contemporary romance novel with coming-of-age themes, exploring first love, family, friendship and growing up.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How many books are in the To All the Boys series?</h3>
+                <div class="faq-content">
+                  <p>There are four books in the To All the Boys series: "To All the Boys I've Loved Before," "P.S. I Still Love You," and "Always and Forever, Lara Jean"</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>What other books has Jenny Han written?</h3>
+                <div class="faq-content">
+                  <p>Some of her other works include The Summer I Turned Pretty trilogy, Shug, Clara Lee and the Apple Pie Dream and the Burn for Burn trilogy, co-written with Siobhan Vivian.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Is To All the Boys I've Loved Before a movie?</h3>
+                <div class="faq-content">
+                  <p>Yes! The novel was adapted into a Netflix film trilogy starring Lana Condor and Noah Centineo.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>In what order should I read the To All the Boys books?</h3>
+                <div class="faq-content">
+                  <p>Start with To All the Boys I've Loved Before, continue with P.S. I Still Love You and finish with Always and Forever, Lara Jean.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Let's Talk Books!</h2>
+        <p>Have a favourite Jenny Han story, a question about her books or a thought you'd love to share? We'd love to hear from fellow readers.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="300">
+            <div class="contact-info">
+              <div class="contact-card">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out with any questions about the book, speaking engagements, or media inquiries.</p>
+
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                      <h4>Email:</h4>
+                      <p>author@example.com</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                      <h4>Phone:</h4>
+                      <p>+254 712345678</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                      <h4>Address:</h4>
+                      <p>123 Book Street, Literary Lane</p>
+                      <p>Nairobi, Kenya</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-links">
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+            <div class="contact-form-wrapper">
+              <form action="{% static 'forms/contact.php' %}" method="post" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required="">
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="john@example.com" required="">
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="I loved your book!" required="">
+                </div>
+                <div class="form-group mt-3">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="message" rows="7" placeholder="Your message here..." required=""></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+    <!-- Related Books Section -->
+    <section id="related-books" class="related-books section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>More Books by the Jenny Han</h2>
+        <p>If you loved Lara Jean's story, there's so much more to discover. Explore other unforgettable worlds created by Jenny Han.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="related-book-card">
+              <div class="book-image">
+                <img src="{% static 'img/book/book-4.jpg' %}" alt="Book Cover" class="img-fluid">
+                <div class="book-category">Young Adult Romance</div>
+              </div>
+              <div class="book-info">
+                <h3>Always and Forever, Lara Jean</h3>
+                <div class="book-meta">
+                  <span><i class="bi bi-calendar3"></i> 2017</span>
+                  <span><i class="bi bi-star-fill"></i> 4.7</span>
+                </div>
+                <p>As high school ends, Lara Jean faces tough decisions about college, her future, and maintaining her relationship with Peter.</p>
+                <div class="book-actions">
+                  <a href="#" class="btn-details">View Details</a>
+                  <a href="#" class="btn-purchase">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="related-book-card">
+              <div class="book-image">
+                <img src="{% static 'img/book/book-5.jpg' %}" alt="Book Cover" class="img-fluid">
+                <div class="book-category">Young Adult Contemporary</div>
+              </div>
+              <div class="book-info">
+                <h3>The Summer I turned Pretty</h3>
+                <div class="book-meta">
+                  <span><i class="bi bi-calendar3"></i> 2009</span>
+                  <span><i class="bi bi-star-fill"></i> 4.9</span>
+                </div>
+                <p>Features a young girl, Belly who finds herself caught in a bittersweet love triangle between two brothers over the course of several unforgettable summers.</p>
+                <div class="book-actions">
+                  <a href="#" class="btn-details">View Details</a>
+                  <a href="#" class="btn-purchase">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="related-book-card">
+              <div class="book-image">
+                <img src="{% static 'img/book/book-6.jpg' %}" alt="Book Cover" class="img-fluid">
+                <div class="book-category">Young Adult Romance</div>
+              </div>
+              <div class="book-info">
+                <h3>P.S. I Still Love You</h3>
+                <div class="book-meta">
+                  <span><i class="bi bi-calendar3"></i> 2015</span>
+                  <span><i class="bi bi-star-fill"></i> 4.8</span>
+                </div>
+                <p>Lara Jean navigates the complexities of her first real relationship while the return of an old crush tests her feelings.</p>
+                <div class="book-actions">
+                  <a href="#" class="btn-details">View Details</a>
+                  <a href="#" class="btn-purchase">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="coming-soon">
+              <div class="coming-soon-badge">Coming Soon</div>
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <div class="upcoming-book-image">
+                    <img src="{% static 'img/book/book-square-1.jpg' %}" alt="Upcoming Book" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="upcoming-book-info">
+                    <h3>What's Next?</h3>
+                    <p class="release-date">There's always another story waiting to be discovered.</p>
+                    <p class="description">Stay connected for updates on Jenny Han's latest projects, upcoming releases and new adaptations. The next chapter might be closer than you think.</p>
+                    <a href="#" class="btn-notify">Get Notified on Release</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Related Books Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="cta-wrapper" data-aos="zoom-in" data-aos-delay="200">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <div class="cta-book-image">
+                    <img src="{% static 'img/book/book-3.jpg' %}" alt="Book Cover" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="cta-content">
+                    <span class="badge">Limited Time Offer</span>
+                    <h2>Start Your Journey Today</h2>
+                    <p>Step into Lara Jean's world of secret letters, unexpected romance and unforgettable moments. Discover the story that reminds us that sometimes love begins when we least expect it.Order now and get exclusive bonus content and 25% off.</p>
+
+                    <div class="cta-features">
+                      <div class="feature-item">
+                        <i class="bi bi-gift"></i>
+                        <span>Exclusive Digital Extras</span>
+                      </div>
+                      <div class="feature-item">
+                        <i class="bi bi-currency-dollar"></i>
+                        <span>Money-Back Guarantee</span>
+                      </div>
+                      <div class="feature-item">
+                        <i class="bi bi-truck"></i>
+                        <span>Free Shipping</span>
+                      </div>
+                    </div>
+
+                    <div class="countdown-timer">
+                      <p>Offer ends in:</p>
+                      <div class="countdown d-flex justify-content-center" data-count="2025/12/3">
+                        <div>
+                          <h3 class="count-days"></h3>
+                          <h4>Days</h4>
+                        </div>
+                        <div>
+                          <h3 class="count-hours"></h3>
+                          <h4>Hours</h4>
+                        </div>
+                        <div>
+                          <h3 class="count-minutes"></h3>
+                          <h4>Minutes</h4>
+                        </div>
+                        <div>
+                          <h3 class="count-seconds"></h3>
+                          <h4>Seconds</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                      <a href="#purchase" class="btn-primary">Get Your Copy Now</a>
+                      <a href="#excerpt" class="btn-secondary">Read Sample</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Call To Action Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <h3 class="sitename">The Jenny Han Collection</h3>
+      <p>Celebrating the stories, characters and unforgettable moments created by bestselling author Jenny Han. Discover her books, explore her literary worlds and find your next favourite read.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">The Jenny Han Collection</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="{% static 'https://github.com/McSteamyX' %}">McSteamy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
