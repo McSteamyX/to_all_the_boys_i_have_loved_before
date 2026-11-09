@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-aj+0vo7y+v!t+l2%k-^0qv#n6e4k)la^44$c!s6pl^1j5j!+xr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jenny-han-collection.onrender.com']
+
+CRSF_TRUSTED_ORIGINS = [
+    'https://jenny-han-collection.onrender.com',
+]
 
 
 # Application definition
