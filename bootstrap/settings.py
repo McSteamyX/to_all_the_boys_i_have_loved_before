@@ -27,7 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jenny-han-collection.onrender.com']
 
-CRSF_TRUSTED_ORIGINS = [
+CSRF_TRUSTED_ORIGINS = [
     'https://jenny-han-collection.onrender.com',
 ]
 
